@@ -270,3 +270,16 @@ nav ul {
     height: auto;
     margin-left: auto; 
 }
+
+.pieDePagina {
+    background:black;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.pieDePagina p {
+    opacity: 0.85;
+}
