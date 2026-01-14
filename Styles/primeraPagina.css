@@ -5,16 +5,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-image: url("../img/uefa.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    color: white;
-}
-
 nav {
     position: fixed;
     top: 0;
@@ -52,4 +42,168 @@ nav ul {
 .seccion:hover {
     color: #2563EB;
     border-bottom: 2px solid #2563EB;
+}
+
+.slider{
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.sliderImagenes{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.sliderImagenes img{
+    flex: 1 0 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+.botonesSlider{
+    display: flex;
+    gap: 1rem;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+}
+
+.botonesSlider a{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.botonesSlider a:hover{
+    background-color: #6b6a6a;
+}
+
+.seccionInformacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 140px 60px;
+    gap: 60px;
+}
+
+.seccionInformacion h2 {
+    font-size: 32px;
+    color: #0A1F44;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.seccionInformacion h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #2563EB;
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.seccionInformacion p {
+    font-size: 18px;
+    color: #1f2933;
+    line-height: 1.7;
+}
+
+.contenedorInformacion {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: rgba(10, 31, 68, 0.9); 
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.contenedorInformacion h2 {
+    color: #60A5FA;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.contenedorInformacion p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #E5E7EB;
+    max-width: 750px;
+}
+
+.contenedorInformacion img {
+    width: 240px;
+    height: auto;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none; 
+}
+
+.seccionInformacionDos {
+    padding: 140px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.seccionInformacionDos h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #2563EB;
+    display: block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.contenedorInformacionDos {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1400px;
+    padding: 60px;
+    background-color: rgba(10, 31, 68, 0.9);
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.contenedorInformacionDos h2 {
+    font-size: 34px;
+    color: #60A5FA;
+    margin-bottom: 20px;
+}
+
+.contenedorInformacionDos p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #E5E7EB;
+    max-width: 700px;
+}
+
+.contenedorInformacionDos .imagenZapato {
+    width: 180px;
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,0.6));
+}
+
+.contenedorInformacionDos img{
+    width: 160px;
+    filter: drop-shadow(0 8px 15px rgba(0,0,0,0.6));
 }
