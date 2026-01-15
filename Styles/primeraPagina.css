@@ -342,3 +342,280 @@ nav ul {
         transform: rotate(0deg) scale(1) translateY(0);
     }
 }
+
+/* Responsivo para Tablet */
+@media screen and (max-width: 1024px) {
+    nav {
+        padding: 0 30px;
+        height: 65px;
+    }
+    
+    .titulo {
+        font-size: 28px;
+    }
+    
+    nav ul {
+        gap: 20px;
+    }
+    
+    .seccion {
+        font-size: 15px;
+    }
+    
+    .seccionInformacion {
+        padding: 100px 40px;
+        gap: 40px;
+    }
+    
+    .contenedorInformacion {
+        flex-direction: column;
+        padding: 40px;
+        gap: 40px;
+    }
+    
+    .contenedorInformacion img {
+        width: 250px;
+    }
+    
+    .contenedorInformacion h2 {
+        font-size: 30px;
+    }
+    
+    .contenedorInformacion p {
+        font-size: 17px;
+    }
+    
+    .seccionInformacionDos {
+        padding: 100px 40px;
+    }
+    
+    .contenedorInformacionDos {
+        flex-direction: column;
+        padding: 40px;
+        gap: 40px;
+    }
+    
+    .contenedorInformacionDos h2 {
+        font-size: 30px;
+    }
+    
+    .contenedorInformacionDos p {
+        font-size: 17px;
+    }
+    
+    .contenedorInformacionDos .jugador {
+        width: 150px;
+    }
+    
+    .contenedorInformacionDos img {
+        width: 140px;
+    }
+    
+    .seccionInformacionTres {
+        padding: 100px 40px;
+    }
+    
+    .contenedorInformacionTres {
+        padding: 40px;
+    }
+    
+    .contenedorInformacionTres h2 {
+        font-size: 30px;
+    }
+    
+    .contenedorInformacionTres p {
+        font-size: 17px;
+    }
+    
+    .imagenesBarcelona {
+        gap: 30px;
+    }
+    
+    .imagenesBarcelona img {
+        width: 200px;
+    }
+    
+    .imagenesBarcelona .museo {
+        width: 350px;
+        height: 220px;
+    }
+}
+
+/* Responsivo para Teléfono */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+        height: 60px;
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    }
+    
+    .titulo {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .seccion {
+        font-size: 14px;
+    }
+    
+    .slider {
+        padding-top: 100px;
+    }
+    
+    .botonesSlider {
+        bottom: 20px;
+        gap: 0.7rem;
+    }
+    
+    .botonesSlider a {
+        width: 12px;
+        height: 12px;
+    }
+    
+    .seccionInformacion {
+        padding: 80px 20px;
+        gap: 30px;
+    }
+    
+    .contenedorInformacion {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    
+    .contenedorInformacion h2 {
+        font-size: 26px;
+    }
+    
+    .contenedorInformacion p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    
+    .contenedorInformacion img {
+        width: 200px;
+    }
+    
+    .seccionInformacionDos {
+        padding: 80px 20px;
+    }
+    
+    .contenedorInformacionDos {
+        padding: 30px 20px;
+        gap: 30px;
+    }
+    
+    .contenedorInformacionDos h2 {
+        font-size: 26px;
+    }
+    
+    .contenedorInformacionDos p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+    
+    .contenedorInformacionDos .jugador {
+        width: 130px;
+    }
+    
+    .contenedorInformacionDos img {
+        width: 120px;
+    }
+    
+    .seccionInformacionTres {
+        padding: 80px 20px;
+    }
+    
+    .contenedorInformacionTres {
+        padding: 30px 20px;
+    }
+    
+    .contenedorInformacionTres h2 {
+        font-size: 26px;
+    }
+    
+    .contenedorInformacionTres p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .imagenesBarcelona {
+        gap: 20px;
+        margin-top: 30px;
+    }
+    
+    .imagenesBarcelona img {
+        width: 150px;
+    }
+    
+    .imagenesBarcelona .museo {
+        width: 100%;
+        max-width: 300px;
+        height: 180px;
+    }
+    
+    .imagenMessi {
+        max-width: 100%;
+    }
+    
+    .pieDePagina {
+        padding: 15px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+
+/* Responsivo para Teléfonos Pequeños */
+@media screen and (max-width: 480px) {
+    .titulo {
+        font-size: 20px;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
+    
+    .seccion {
+        font-size: 13px;
+    }
+    
+    .contenedorInformacion h2,
+    .contenedorInformacionDos h2,
+    .contenedorInformacionTres h2 {
+        font-size: 22px;
+    }
+    
+    .contenedorInformacion p,
+    .contenedorInformacionDos p,
+    .contenedorInformacionTres p {
+        font-size: 15px;
+    }
+    
+    .contenedorInformacion img {
+        width: 170px;
+    }
+    
+    .contenedorInformacionDos .jugador {
+        width: 110px;
+    }
+    
+    .contenedorInformacionDos img {
+        width: 100px;
+    }
+    
+    .imagenesBarcelona img {
+        width: 130px;
+    }
+    
+    .imagenesBarcelona .museo {
+        max-width: 260px;
+        height: 160px;
+    }
+}
