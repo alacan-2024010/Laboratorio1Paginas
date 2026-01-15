@@ -156,7 +156,7 @@ section + section{
     flex: 1;
 }
 
-.biografia1, .biografia2{
+.imagen1, .imagen2{
     width: 185px;
     height: 230px;
     object-fit: cover;
@@ -165,21 +165,21 @@ section + section{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.biografia1{
+.imagen1{
     float: right;
     margin-left: 20px;
     margin-bottom: 15px;
     transform: rotate(3deg);
 }
 
-.biografia2{
+.imagen2{
     float: left;
     margin-right: 20px;
     margin-bottom: 15px;
     transform: rotate(-4deg);
 }
 
-.biografia1:hover, .biografia2:hover{
+.imagen1:hover, .imagen2:hover{
     transform: rotate(0deg) scale(1.05);
     box-shadow: 0 10px 25px rgba(0,0,0,0.35);
     z-index: 5;
@@ -189,6 +189,25 @@ section + section{
     content: "";
     display: table;
     clear: both;
+}
+
+.contenedor-imagenes{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.imagen{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.imagen:hover{
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px){
