@@ -103,7 +103,7 @@ section{
 section h2{
     font-family: 'Playfair Display', serif;
     color: #1e3a5f;
-    margin-bottom: 20px;
+    margin-bottom: 25dpx;
     font-size: 35px;
     font-weight: 600;
     text-align: center; 
@@ -115,7 +115,7 @@ section p{
     font-family: "Archivo", sans-serif;
     color: #000000;
     line-height: 1.8;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 section + section{
@@ -229,33 +229,39 @@ section + section{
 }
 
 .calendario{
-    width: 180px;
-    height: 180px;
-    object-fit: contain;
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 15px;
-    transform: rotate(5deg);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: transparent;
-}
-
-.programacion{
+    float: left;
     width: 160px;
     height: 160px;
     object-fit: contain;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 15px;
+    margin: 0 25px 15px 0;   
+    transform: rotate(5deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.programacion{
+    float: right;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 0 15px 25px;  
     transform: rotate(-6deg);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: transparent;
 }
 
 
 .calendario:hover,
 .programacion:hover{
     transform: rotate(0deg) scale(1.1);
+}
+
+.secciones .textoBiografia2{
+    flex: 1;
+}
+
+.textoBiografia2::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
@@ -281,5 +287,160 @@ section + section{
     section{
         margin-top: 120px;
         padding: 30px;
+    }
+
+    .clip{
+        left: -35px;
+        transform: rotate(-5deg);
+    }
+
+    .calendario{
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        transform: rotate(0deg);
+    }
+
+    .programacion{
+        float: none;
+        display: block;
+        margin: 30px auto 0;
+        transform: rotate(0deg);
+    }
+
+    .textoBiografia p{
+        text-align: center;
+    }
+}
+
+/*Pagina Responsiva*/
+@media (max-width: 1024px) {
+
+    .titulo{
+        font-size: 32px;
+    }
+
+    section{
+        max-width: 90%;
+    }
+
+    .imagen1, .imagen2{
+        width: 160px;
+        height: 210px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar{
+        height: 70px;
+        padding: 0 20px;
+    }
+
+    .titulo{
+        font-size: 26px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .icono{
+        width: 24px;
+        height: 24px;
+    }
+
+    .links{
+        width: 100%;
+        height: calc(100vh - 70px);
+        top: 70px;
+        align-items: center;
+    }
+
+    .link{
+        font-size: 18px;
+    }
+
+    section{
+        margin: 110px auto 0;
+        padding: 25px;
+    }
+
+    section + section{
+        margin-top: 140px;
+    }
+
+    section h2{
+        font-size: 26px;
+    }
+
+    section p{
+        font-size: 15px;
+    }
+
+    .imagen1,
+    .imagen2,
+    .calendario,
+    .programacion{
+        float: none;
+        display: block;
+        margin: 20px auto;
+        transform: rotate(0deg);
+    }
+
+    .imagen1,
+    .imagen2{
+        width: 200px;
+        height: 250px;
+    }
+
+    .clip{
+        width: 90px;
+        top: -35px;
+    }
+
+    .inicio{
+        max-width: 90%;
+        margin: 120px auto 0;
+    }
+
+    .inicio .imagen{
+        max-width: 280px;
+    }
+
+    .contenedor-imagenes{
+        gap: 20px;
+    }
+
+    .imagenes,
+    .birrete{
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (min-width: 769px){
+    .textoBiografia2 p{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        text-align: justify;
+    }
+
+    .calendario{
+        width: 160px;
+        height: 160px;
+        object-fit: contain;
+        transform: rotate(5deg);
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    .programacion{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        transform: rotate(-6deg);
+        flex-shrink: 0;
+        margin: 0;
     }
 }
