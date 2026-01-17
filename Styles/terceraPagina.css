@@ -203,3 +203,39 @@ nav ul li a:hover {
 .texto2 p {
     text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
+
+.contenedor {
+    display: flex;                
+    align-items: center;         
+    justify-content: center;    
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 10px;  
+    gap: 40px;                   
+}
+
+.trabajo {
+    max-width: 35%;               
+    height: auto;
+    display: block;
+}
+
+.informacion {
+    max-width: 70%;               
+    text-align: left;            
+}
+
+.camino {
+    font-size: 40px;
+    font-weight: 700;
+    color: #072b64;
+    margin-bottom: 20px;
+}
+
+.informacion p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333333;
+    text-align: justify;         
+}
