@@ -38,6 +38,8 @@ nav ul li a {
     font-weight: 600;
     font-size: 14px;
     transition: color 0.3s ease;
+    padding-top: 20px;
+    display: inline-block;
 }
 
 nav ul li a:hover {
@@ -69,4 +71,135 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover; 
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.texto-slide {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;  
+    gap: 4px;             
+    z-index: 10;
+    color: white;
+}
+
+.logoKinal {
+    width: 50px;           
+    height: auto;
+}
+
+.texto {
+    position: absolute;
+    top: 45%;
+    left:50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: white;
+}
+
+.texto .en {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+
+.texto .fundacion {
+    font-size: 65px;
+    font-weight: 800;
+    color: #ffffff; 
+    margin: 0;
+}
+
+.texto .somos {
+    font-size: 40px;
+    font-weight: 700;
+    color: #F59014;
+    margin: 10px 0 0;
+    margin-left: 32px;
+}
+
+.texto .superacion {
+    font-size: 50px;
+    font-weight: 800;
+    color: #ffffff; 
+    margin: 0;
+    top: -20px;
+}
+
+.texto .jovenes {
+    font-size: 40px;
+    font-weight: 700;
+    color: #F59014;
+    margin-top: 5px;
+    margin-left: 218px;
+}
+
+.texto h1,
+.texto h2,
+.texto p {
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.somos1, .superacion1 {
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+.texto2 {
+    position: absolute;
+    top: 22%;
+    left:12%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: white;
+}
+
+.texto2 .en {
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+
+.texto2 .fundacion {
+    font-size: 65px;
+    font-weight: 800;
+    color: #ffffff; 
+    margin: 0;
+}
+
+.texto2 .somos {
+    font-size: 40px;
+    font-weight: 700;
+    color: #F59014;
+    margin: 10px 0 0;
+}
+
+.texto2 .superacion {
+    font-size: 50px;
+    font-weight: 800;
+    color: #ffffff; 
+    margin: 0;
+}
+
+.texto2 .jovenes {
+    font-size: 40px;
+    font-weight: 700;
+    color: #F59014;
+    margin-top: 5px;
+}
+
+.texto2 h1,
+.texto2 h2,
+.texto2 p {
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
