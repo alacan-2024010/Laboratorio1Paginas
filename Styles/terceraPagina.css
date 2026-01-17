@@ -540,3 +540,83 @@ nav ul li a:hover {
 .naranja  { 
     background: #f77f00; 
 }
+
+.piePagina {
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 300px; 
+}
+
+.columna {
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Para las líneas de separación */
+.columna:nth-child(1)::after,
+.columna:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+}
+
+.columna h3 {
+    margin-bottom: 15px;
+    font-weight: 700; 
+}
+
+.columna p {
+    margin: 5px 0;
+}
+
+.imagenPiePagina {
+    max-width: 340px; 
+    width: 100%;      
+    height: auto;     
+    display: block;  
+    margin: 0 auto;   
+}
+
+.redes {
+    width: 100%;              
+    display: flex;
+    justify-content: center;   
+    gap: 15px;
+    margin-top: 30px;          
+    margin-bottom: 20px;
+}
+
+.imagenRedes {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.redes .imagenRedes:hover {
+    transform: scale(1.2);
+}
+
+.pie  {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4; 
+}
