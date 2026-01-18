@@ -396,7 +396,7 @@ nav ul li a:hover {
     width: 50%;
     max-width: 520px;
     background: rgba(255, 255, 255, 0.95);
-    padding: 40px;
+    padding: 40px 1px 1px 20px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     z-index: 2;                      
@@ -465,7 +465,7 @@ nav ul li a:hover {
     width: 50%;
     max-width: 520px;
     background: rgba(255, 255, 255, 0.95);
-    padding: 40px;
+    padding: 40px 1px 1px 20px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     z-index: 2;                      
@@ -481,7 +481,7 @@ nav ul li a:hover {
 
 .beneficiados {
     background: #162646;
-    padding: 80px 40px;
+    padding: 40px 40px;
     text-align: center;
 }
 
@@ -629,7 +629,7 @@ nav ul li a:hover {
 .pie  {
     color: white;
     text-align: center;
-    margin-top: 10px;
+    margin: 20px 0 0 0;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4; 
