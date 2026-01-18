@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: #f0f0f0;
 }
 
 nav {
@@ -212,7 +212,8 @@ nav ul li a:hover {
     width: 90%;
     margin: 0 auto;
     padding: 20px 10px;  
-    gap: 40px;                   
+    gap: 40px; 
+    padding-top: 55px;                  
 }
 
 .trabajo {
@@ -227,13 +228,15 @@ nav ul li a:hover {
 }
 
 .camino {
-    font-size: 40px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 35px;
     font-weight: 700;
     color: #072b64;
     margin-bottom: 20px;
 }
 
 .informacion p {
+    font-family: "Libre Caslon Text", serif;
     font-size: 18px;
     line-height: 1.8;
     color: #20223d;
@@ -265,6 +268,7 @@ nav ul li a:hover {
 }
 
 .infoCurso p {
+    font-family: "Libre Caslon Text", serif;
     font-size: 18px;
     line-height: 1.6;
     color: #20223d;
@@ -301,6 +305,7 @@ nav ul li a:hover {
     line-height: 1.6;
     color: #20223d;
     margin: 0;
+    font-family: "Libre Caslon Text", serif;
 }
 
 .contenedor4 {
@@ -319,12 +324,13 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-.infoEscuela p {
+.infoEscueela p {
     font-size: 18px;         
     line-height: 1.6;
     color: #20223d;
     margin: 0;
-    text-align: center;    
+    text-align: center;   
+    font-family: "Libre Caslon Text", serif; 
 }
 
 .contenedorPartners {
@@ -338,12 +344,13 @@ nav ul li a:hover {
 }
 
 .contenedorPartners h2 {
+    font-family: "Special Gothic Expanded One", sans-serif;
     padding-top: 100px;
     width: 100%;
     margin-bottom: 30px;
     text-align: center;
     color: #072b64;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -368,7 +375,6 @@ nav ul li a:hover {
     margin: 0 auto;
     padding: 80px 40px;
     gap: 60px;
-
     margin-top: 130px; 
 }
 
@@ -408,12 +414,12 @@ nav ul li a:hover {
     font-weight: 800;
     margin: 15px 0;
     color: #1e3a8a;
-
     text-shadow: 3px 3px 6px #5e90bec4;
 }
 
 
 .contenedor5 p {
+    font-family: "Libre Caslon Text", serif; 
     font-size: 18px;
     line-height: 1.6;
     color: #20223d;
@@ -480,11 +486,19 @@ nav ul li a:hover {
 }
 
 .beneficiados h2 {
+    font-family: "Special Gothic Expanded One", sans-serif;
     color: #ffffff;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 800;
     margin-bottom: 60px;
     padding-top: 10px;
+}
+
+.contenedor6 p {
+    font-family: "Libre Caslon Text", serif; 
+    font-size: 18px;
+    line-height: 1.6;
+    color: #20223d;
 }
 
 .tarjetas {
