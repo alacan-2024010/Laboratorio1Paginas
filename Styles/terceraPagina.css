@@ -1,3 +1,4 @@
+/* ========== ESTILOS BASE (ya existentes) ========== */
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +23,13 @@ nav {
     padding: 0 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     z-index: 1000;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav ul {
@@ -54,6 +62,35 @@ nav ul li a:hover {
 .banco {
     height: 50px;
     width: auto;
+}
+
+/* Botón hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #050574;
+    transition: all 0.3s ease;
+    border-radius: 3px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 #carouselExampleRide {
@@ -97,7 +134,7 @@ nav ul li a:hover {
 .texto {
     position: absolute;
     top: 45%;
-    left:50%;
+    left: 50%;
     transform: translateY(-50%);
     z-index: 10;
     color: white;
@@ -109,7 +146,6 @@ nav ul li a:hover {
     color: #ffffff;
     margin-bottom: 5px;
 }
-
 
 .texto .fundacion {
     font-size: 65px;
@@ -156,7 +192,7 @@ nav ul li a:hover {
 .texto2 {
     position: absolute;
     top: 22%;
-    left:12%;
+    left: 12%;
     transform: translateY(-50%);
     z-index: 10;
     color: white;
@@ -168,7 +204,6 @@ nav ul li a:hover {
     color: #ffffff;
     margin-bottom: 5px;
 }
-
 
 .texto2 .fundacion {
     font-size: 65px;
@@ -247,7 +282,7 @@ nav ul li a:hover {
     padding-top: 100px;
     display: flex;           
     justify-content: center; 
-    gap: 200px ;            
+    gap: 200px;            
     flex-wrap: wrap;         
     width: 90%;
     margin: 0 auto;
@@ -279,7 +314,7 @@ nav ul li a:hover {
     padding-top: 100px;
     display: flex;           
     justify-content: center; 
-    gap: 200px ;            
+    gap: 200px;            
     flex-wrap: wrap;         
     width: 90%;
     margin: 0 auto;  
@@ -292,7 +327,6 @@ nav ul li a:hover {
     width: 400px;            
     text-align: center; 
 }
-
 
 .imagenCursosTecnicos {
     width: 100%;             
@@ -386,7 +420,6 @@ nav ul li a:hover {
     margin-left: 500px;
 }
 
-
 .contenedor5 {
     position: absolute;
     text-align: center;
@@ -402,7 +435,6 @@ nav ul li a:hover {
     z-index: 2;                      
 }
 
-
 .alumno {
     color: #1e3a8a;
     font-size: 26px;
@@ -416,7 +448,6 @@ nav ul li a:hover {
     color: #1e3a8a;
     text-shadow: 3px 3px 6px #5e90bec4;
 }
-
 
 .contenedor5 p {
     font-family: "Libre Caslon Text", serif; 
@@ -557,7 +588,7 @@ nav ul li a:hover {
 
 .piePagina {
     color: white;
-    padding: 40px 20px;
+    padding: 5px 20px 40px 20px;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: space-between;
@@ -574,7 +605,6 @@ nav ul li a:hover {
     position: relative;
 }
 
-/* Para las líneas de separación */
 .columna:nth-child(1)::after,
 .columna:nth-child(2)::after {
     content: "";
@@ -626,11 +656,542 @@ nav ul li a:hover {
     transform: scale(1.2);
 }
 
-.pie  {
+.pie {
     color: white;
     text-align: center;
     margin: 20px 0 0 0;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4; 
+}
+
+.explicacion {
+    max-width: 100%;
+    margin: 140px auto -100px auto;
+    padding: 40px 50px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    text-align: center;
+}
+
+.explicacion h3 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 30px;
+    color: #072b64;
+    margin-bottom: 25px;
+}
+
+.explicacion p {
+    font-family: "Libre Caslon Text", serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #20223d;
+    text-align: justify;
+}
+
+/* ========== RESPONSIVE - TABLETS Y ESCRITORIO MEDIANO ========== */
+@media (max-width: 1200px) {
+    nav ul {
+        gap: 25px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .contenedorCursos {
+        gap: 100px;
+    }
+
+    .contenedorCursosTecnicos {
+        gap: 100px;
+    }
+
+    .estudianteApoyo {
+        margin-left: 300px;
+    }
+
+    .contenedor5 {
+        left: 5%;
+        width: 45%;
+    }
+
+    .contenedor6 {
+        right: 5%;
+        width: 45%;
+    }
+}
+
+@media (max-width: 968px) {
+    nav {
+        height: 80px;
+        padding: 0 30px;
+    }
+
+    .logo {
+        height: 60px;
+    }
+
+    .banco {
+        height: 45px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    #carouselExampleRide {
+        height: 500px;
+        margin-top: 82px;
+    }
+
+    .texto .fundacion {
+        font-size: 50px;
+    }
+
+    .texto .somos {
+        font-size: 32px;
+    }
+
+    .texto .superacion {
+        font-size: 40px;
+    }
+
+    .texto .jovenes {
+        font-size: 32px;
+        margin-left: 150px;
+    }
+
+    .texto2 .fundacion {
+        font-size: 50px;
+    }
+
+    .texto2 .somos {
+        font-size: 32px;
+    }
+
+    .texto2 .superacion {
+        font-size: 40px;
+    }
+
+    .texto2 .jovenes {
+        font-size: 32px;
+    }
+
+    .camino {
+        font-size: 28px;
+    }
+
+    .contenedorCursos {
+        gap: 60px;
+    }
+
+    .contenedorCursosTecnicos {
+        gap: 60px;
+    }
+
+    .contenedor2,
+    .contenedor3 {
+        width: 350px;
+    }
+}
+
+/* ========== RESPONSIVE - TABLETS ========== */
+@media (max-width: 768px) {
+    nav {
+        height: 70px;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 50px;
+        order: 1;
+    }
+
+    .banco {
+        height: 40px;
+        order: 3;
+    }
+
+    .hamburger {
+        display: flex;
+        order: 2;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 30px 0;
+        gap: 0;
+        transition: right 0.4s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul.active {
+        right: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    #carouselExampleRide {
+        height: 400px;
+        margin-top: 72px;
+    }
+
+    .texto {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .texto .en {
+        font-size: 28px;
+    }
+
+    .texto .fundacion {
+        font-size: 40px;
+    }
+
+    .texto .somos {
+        font-size: 26px;
+        margin-left: 0;
+    }
+
+    .texto .superacion {
+        font-size: 32px;
+    }
+
+    .texto .jovenes {
+        font-size: 26px;
+        margin-left: 0;
+    }
+
+    .texto2 {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .texto2 .en {
+        font-size: 28px;
+    }
+
+    .texto2 .fundacion {
+        font-size: 40px;
+    }
+
+    .texto2 .somos {
+        font-size: 26px;
+    }
+
+    .texto2 .superacion {
+        font-size: 32px;
+    }
+
+    .texto2 .jovenes {
+        font-size: 26px;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .trabajo {
+        max-width: 80%;
+    }
+
+    .informacion {
+        max-width: 100%;
+    }
+
+    .camino {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .informacion p {
+        font-size: 16px;
+    }
+
+    .contenedorCursos {
+        padding-top: 60px;
+        gap: 40px;
+    }
+
+    .contenedor2,
+    .contenedor3 {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .contenedorCursosTecnicos {
+        padding-top: 60px;
+        gap: 40px;
+    }
+
+    .contenedor4 {
+        padding-top: 60px;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .contenedorPartners h2 {
+        padding-top: 60px;
+        font-size: 26px;
+    }
+
+    .imagenPartners {
+        height: 50px;
+    }
+
+    .seccionTrabajos {
+        flex-direction: column;
+        margin-top: 80px;
+        padding: 40px 20px;
+    }
+
+    .estudianteApoyo {
+        width: 80%;
+        margin-left: 0;
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .contenedor5 {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        order: 1;
+        padding: 30px 20px;
+    }
+
+    .estudianteApoyo2 {
+        width: 80%;
+        margin-left: 0;
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .contenedor6 {
+        position: relative;
+        right: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+        padding: 30px 20px;
+    }
+
+    .alumno {
+        font-size: 22px;
+    }
+
+    .alumnoEmpleo {
+        font-size: 24px;
+    }
+
+    .contenedor5 p,
+    .contenedor6 p {
+        font-size: 16px;
+    }
+
+    .beneficiados h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .tarjeta {
+        width: 220px;
+        height: 300px;
+    }
+
+    .numero {
+        font-size: 60px;
+    }
+
+    .piePagina {
+        padding-top: 80px;
+    }
+
+    .columna:nth-child(1)::after,
+    .columna:nth-child(2)::after {
+        display: none;
+    }
+
+    .explicacion {
+        margin: 80px auto -50px auto;
+        padding: 30px 30px;
+    }
+
+    .explicacion h3 {
+        font-size: 24px;
+    }
+
+    .explicacion p {
+        font-size: 16px;
+    }
+}
+
+/* ========== RESPONSIVE - MÓVILES ========== */
+@media (max-width: 480px) {
+    nav {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .banco {
+        height: 35px;
+    }
+
+    nav ul {
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 18px;
+    }
+
+    #carouselExampleRide {
+        height: 300px;
+        margin-top: 62px;
+    }
+
+    .texto .en,
+    .texto2 .en {
+        font-size: 22px;
+    }
+
+    .texto .fundacion,
+    .texto2 .fundacion {
+        font-size: 30px;
+    }
+
+    .texto .somos,
+    .texto2 .somos {
+        font-size: 20px;
+    }
+
+    .texto .superacion,
+    .texto2 .superacion {
+        font-size: 26px;
+    }
+
+    .texto .jovenes,
+    .texto2 .jovenes {
+        font-size: 20px;
+    }
+
+    .logoKinal {
+        width: 35px;
+    }
+
+    .camino {
+        font-size: 20px;
+    }
+
+    .informacion p {
+        font-size: 15px;
+    }
+
+    .infoCurso p,
+    .infoCursoTecnico p,
+    .infoEscueela p {
+        font-size: 16px;
+    }
+
+    .contenedorPartners h2 {
+        font-size: 22px;
+    }
+
+    .imagenPartners {
+        height: 40px;
+    }
+
+    .alumno {
+        font-size: 18px;
+    }
+
+    .alumnoEmpleo {
+        font-size: 20px;
+    }
+
+    .contenedor5 p,
+    .contenedor6 p {
+        font-size: 15px;
+    }
+
+    .botonInfo {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .botonInfo img {
+        width: 20px;
+    }
+
+    .beneficiados h2 {
+        font-size: 26px;
+    }
+
+    .tarjeta {
+        width: 180px;
+        height: 260px;
+    }
+
+    .numero {
+        font-size: 50px;
+    }
+
+    .tarjetas p {
+        font-size: 14px;
+    }
+
+    .imagenRedes {
+        width: 50px;
+        height: 50px;
+    }
+
+    .pie {
+        font-size: 16px;
+    }
+
+    .explicacion h3 {
+        font-size: 20px;
+    }
+
+    .explicacion p {
+        font-size: 15px;
+    }
 }
